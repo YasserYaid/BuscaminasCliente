@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aceptar_EG" xml:space="preserve">
+    <value>Aceptar</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Agregar_EG" xml:space="preserve">
+    <value>Agregar</value>
+    <comment>Elemento Grafico en el XAML: 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AlertaCamposVacios_MSJ" xml:space="preserve">
+    <value>Hay campos vacios</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="AlertaCodigoSalaNoIntroducido_MSJ" xml:space="preserve">
+    <value>El codigo de la sala no puede quedar vacio, por favor introduzca un codigo de sala.</value>
+    <comment>Mensaje utilizado en el XAML : 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="AlertaCorreoEsRequerido_MSJ" xml:space="preserve">
+    <value>El correo no puede quedar vacio, es necesario introducir un correo valido</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="AlertaExisteUnaSesionActiva_MSJ" xml:space="preserve">
+    <value>Ya hay una sesión activa para esta cuenta</value>
+    <comment>Mensaje utilizado en el XAML : 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="AlertaFilaDeAmigoNoSeleccionada_MSJ" xml:space="preserve">
+    <value>No selecciono nungun jugador, seleccione un jugador primero</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AlertaFilaDeSolicitudNoSeleccionada_MSJ" xml:space="preserve">
+    <value>No selecciono nunguna solicitud, seleccione una solicitud primero</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AlertaFormatoContraseniaNoValido_MSJ" xml:space="preserve">
+    <value>Contraseña no valida, introduzca una contraseña de minimo 6 caracteres con una combinacion de al menos una letra, un numero, y un caracter especial</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="AlertaLaCuentaYaExiste_MSJ" xml:space="preserve">
+    <value>Ya existe una cuenta con la informacion introducida</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="AlertaMismoNombreUsuarioDestino_MSJ" xml:space="preserve">
+    <value>El nombre de usuario no puede ser el mismo que el de la cuenta de usted.</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="AlertaNoExisteNombreUsuario_MSJ" xml:space="preserve">
+    <value>El nombre de usuario buscado no existe en el registro del sistema.</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="AlertaNoExisteSala_MSJ" xml:space="preserve">
+    <value>No existe ninguna para el codigo ingresado, verifique el codigo e intente de nuevo.</value>
+    <comment>Mensaje utilizado en el XAML : 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="AlertaNoHayDosJugadores_MSJ" xml:space="preserve">
+    <value>Es necesario que haya exactamente dos jugadores, sino no se puede empezar el juego.</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="AlertaNoSeIngresoNombreUsuario_MSJ" xml:space="preserve">
+    <value>No ingreso un nombre de usuario en el buscador, ingrese uno para poder proceder</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="AlertaNoSePudoAgregarAmistad_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo agregar al jugador seleccionado a su lista de amigos, intentelo de nuevo en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AlertaNoSePudoBorrarAmistad_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo borrar al jugador seleccionado de su lista de amigos, intentelo de nuevo en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AlertaNoSePudoBorrarSolicitud_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo borrar la solicitud seleccionada de su lista de solicitudes, intentelo de nuevo en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AlertaNoSePudoEnviarSolicitud_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo enviar la solicitud, intente en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="AlertaSalaLlena_MSJ" xml:space="preserve">
+    <value>De momento el juego solo admite dos usuarios por sala y ya esta llena</value>
+    <comment>Mensaje utilizado en el XAML : 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="AlertaYaExisteUnaSolicitudEnviada_MSJ" xml:space="preserve">
+    <value>Ya existe una solicitud enviada, no se puede volver a enviar</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="Amigos_EG" xml:space="preserve">
+    <value>Amigos</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Atras_EG" xml:space="preserve">
+    <value>Atras</value>
+    <comment>Elemento Grafico en el XAML: 10_OpcionesGUI</comment>
+  </data>
+  <data name="AvisoAmigoBaneado_MSJ" xml:space="preserve">
+    <value>Amigo en estado de baneo</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AvisoAmigoNormal_MSJ" xml:space="preserve">
+    <value>Amigo en estado normal</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AvisoAmistadAgregada_MSJ" xml:space="preserve">
+    <value>Se ha agregado a la lista de amigos</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AvisoAmistadBorrada_MSJ" xml:space="preserve">
+    <value>El jugador seleccionado ha sido borrado de su lista de amigos</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AvisoBienvenido_MSJ" xml:space="preserve">
+    <value>Bienvenido</value>
+    <comment>Mensaje utilizado en el XAML : 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="AvisoConfirmarCancelacionJuego_MSJ" xml:space="preserve">
+    <value>El codigo de la sala se perdera, y se generara uno nuevo esta accion no se puede deshacer, ¿Esta seguro de que desea cancelar el juego?</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="AvisoConfirmarEliminacionSolicitud_MSJ" xml:space="preserve">
+    <value>¿Esta seguro que desea eliminar esta solicitud de su lista de solicitudes?</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AvisoConfirmarEliminacion_MSJ" xml:space="preserve">
+    <value>¿Esta seguro que desea eliminar este jugador de su lista de amigos?</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="AvisoCuentaRegistradaExitosamente_MSJ" xml:space="preserve">
+    <value>La cuenta se registro con exito en el sistema</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="AvisoIdiomaCambiado_MSJ" xml:space="preserve">
+    <value>El idioma de la aplicacion cambio, por favor presione atras para recargar</value>
+    <comment>Mensaje utilizado en el XAML : 11_SeleccionarIdiomaGUI</comment>
+  </data>
+  <data name="AvisoSalida_MSJ" xml:space="preserve">
+    <value>Saliendo del juego, gracias por jugar al buscaminas</value>
+    <comment>Mensaje utilizado en el XAML : 09_MenuPrincipalGUI</comment>
+  </data>
+  <data name="AvisoSolicitudAmistadBorrada_MSJ" xml:space="preserve">
+    <value>La solicitud seleccionada ha sido borrada de su lista de solicitudes</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="AvisoSolicitudEnviada_MSJ" xml:space="preserve">
+    <value>La solicitud al usuario buscado se envio satisfactoriamente</value>
+    <comment>Mensaje utilizado en el XAML : 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="Banderas_EG" xml:space="preserve">
+    <value>Banderas :</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="Buscaminas_EG" xml:space="preserve">
+    <value>Buscaminas</value>
+    <comment>Elemento Grafico en el XAML: 01_MainWindow</comment>
+  </data>
+  <data name="CambiarApariencia_EG" xml:space="preserve">
+    <value>Cambiar Apariencia</value>
+    <comment>Elemento Grafico en el XAML: 10_OpcionesGUI</comment>
+  </data>
+  <data name="CancelarJuego_EG" xml:space="preserve">
+    <value>Cancelar Juego</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Cancelar_EG" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Cerrar_EG" xml:space="preserve">
+    <value>Cerrar</value>
+    <comment>Elemento Grafico en el XAML: 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="Chat_EG" xml:space="preserve">
+    <value>Chat</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="CodigoConfirmacion_EG" xml:space="preserve">
+    <value>Codigo de confirmacion</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="CodigoSala_EG" xml:space="preserve">
+    <value>Codigo de la sala</value>
+    <comment>Elemento Grafico en el XAML: 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="ConfirmarContrasenia_EG" xml:space="preserve">
+    <value>Confirmar Contraseña</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Contrasenia_EG" xml:space="preserve">
+    <value>Contraseña</value>
+    <comment>Elemento Grafico en el XAML: 02_IniciarSesionGUI | 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="CorreoAsuntoCodigoInvitacion_MSJ" xml:space="preserve">
+    <value>Codigo de invitación al juego del buscaminas</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="CorreoAsuntoCodigoRegistroCuenta_MSJ" xml:space="preserve">
+    <value>Codigo de registro del juego de Buscaminas</value>
+    <comment>Mensaje utilizado en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="CorreoMensajeCodigoInvitacion_MSJ" xml:space="preserve">
+    <value> lo ha invitado a jugar al buscaminas. Ingrese el siguiente código de sala:</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="CorreoMensajeCodigoRegistroCuenta_MSJ" xml:space="preserve">
+    <value>Su codigo de registro del buscaminas es:</value>
+    <comment>Mensaje utilizado en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Correo_EG" xml:space="preserve">
+    <value>Correo</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="CrearSala_EG" xml:space="preserve">
+    <value>Create Sala</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Creditos_EG" xml:space="preserve">
+    <value>Creditos</value>
+    <comment>Elemento Grafico en el XAML: 10_OpcionesGUI</comment>
+  </data>
+  <data name="DosJugadores_EG" xml:space="preserve">
+    <value>Dos Jugadores</value>
+    <comment>Elemento Grafico en el XAML: 13_SeleccionarModoJuegoGUI</comment>
+  </data>
+  <data name="Eliminar_EG" xml:space="preserve">
+    <value>Eliminar</value>
+    <comment>Elemento Grafico en el XAML: 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="EnviarCodigo_EG" xml:space="preserve">
+    <value>Enviar codigo de confirmacion</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="EnviarMensaje_EG" xml:space="preserve">
+    <value>Enviar Mensaje</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="EnviarSolicitud_EG" xml:space="preserve">
+    <value>Enviar solicitud de amistad</value>
+    <comment>Elemento Grafico en el XAML: 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="ErrorBMExcepcionNombreIncorrectoBoton_MSJ" xml:space="preserve">
+    <value>Incorrect button name in JuegoGUI.xaml</value>
+    <comment>Mensaje utilizado en el XAML : 12_JuegoGUI</comment>
+  </data>
+  <data name="ErrorBMExcepcionReferenciaInvalidaBoton_MSJ" xml:space="preserve">
+    <value>Referencia inválida del Boton al revelar la celda en el tablero (el botón apunta a una celda no válida)</value>
+    <comment>Mensaje utilizado en el XAML : 12_JuegoGUI</comment>
+  </data>
+  <data name="ErrorCamposConCaracterEspacio_MSJ" xml:space="preserve">
+    <value>Los campos no pueden llenarse solo con el caracter de espacio, ya que quedarian en blanco</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="ErrorCodigosConfirmacionDiferentes_MSJ" xml:space="preserve">
+    <value>El codigo de confirmacion enviado al correo no coincide con el codigo de confirmacion introducido</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="ErrorContraseniaNoCoincide_MSJ" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="ErrorCuentaNoRegistrada_MSJ" xml:space="preserve">
+    <value>No se pudo registrar la cuenta, intente de nuevo en un otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="ErrorDatosIncorrectos_MSJ" xml:space="preserve">
+    <value>El nombre de usuario o contraseña no son los correctos</value>
+    <comment>Mensaje utilizado en el XAML : 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="ErrorFormatoCorreoInvalido_MSJ" xml:space="preserve">
+    <value>El formato del correo no es valido</value>
+    <comment>Mensaje utilizado en el XAML : 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="ErrorIngresandoASala_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo ingresar a la sala, intente en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="ErrorNoSeEncontroServidor_MSJ" xml:space="preserve">
+    <value>No se puede encontrar el servidor, el programa se cerrara.</value>
+    <comment>Mensaje utilizado en el XAML : 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="ErrorNoSePudoBorrarJugadorSala_MSJ" xml:space="preserve">
+    <value>Ocurrio un fallo y no se pudo borrar al jugador de la sala, intentelo de nuevo en otro momento</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="ErrorNosePudoCrearLaSala_MSJ" xml:space="preserve">
+    <value>Hubo un fallo y no se pudo crear la sala</value>
+    <comment>Mensaje utilizado en el XAML : 09_MenuPrincipalGUI</comment>
+  </data>
+  <data name="ErrorObjetoComunicacionConServidor_MSJ" xml:space="preserve">
+    <value>Hay un error con el objeto de comunicacion del servidor, el programa se cerrara</value>
+    <comment>Mensaje utilizado en el XAML : 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="Espaniol_EG" xml:space="preserve">
+    <value>Español</value>
+    <comment>Elemento Grafico en el XAML: 11_SeleccionarIdiomaGUI</comment>
+  </data>
+  <data name="EsperandoJugador_EG" xml:space="preserve">
+    <value>Esperando jugador</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Estado_EG" xml:space="preserve">
+    <value>Estado</value>
+    <comment>Elemento Grafico en el XAML: 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="Femenino_EG" xml:space="preserve">
+    <value>Femenino</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Genero_EG" xml:space="preserve">
+    <value>Genero</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Ingles_EG" xml:space="preserve">
+    <value>Ingles</value>
+    <comment>Elemento Grafico en el XAML: 11_SeleccionarIdiomaGUI</comment>
+  </data>
+  <data name="IngresarCodigoSala_EG" xml:space="preserve">
+    <value>Ingresar el codigo de la sala</value>
+    <comment>Elemento Grafico en el XAML: 06_IngresarCodigoSalaGUI</comment>
+  </data>
+  <data name="IngresarNombreUsuario_EG" xml:space="preserve">
+    <value>Ingresar nombre de usuario</value>
+    <comment>Elemento Grafico en el XAML: 05_EnviarSolicitudAmistadGUI</comment>
+  </data>
+  <data name="IniciarJuego_EG" xml:space="preserve">
+    <value>Iniciar Juego</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="IniciarSesion_EG" xml:space="preserve">
+    <value>Iniciar Sesion</value>
+    <comment>Elemento Grafico en el XAML: 01_MainWindow | 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="Invitar_EG" xml:space="preserve">
+    <value>Invitar a jugar</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Jugador1DebeComenzar_MSJ" xml:space="preserve">
+    <value>El primer Jugador debe comenzar el juego</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Jugador1_EG" xml:space="preserve">
+    <value>Jugador numero uno</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Jugador2_EG" xml:space="preserve">
+    <value>Jugador numero dos</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="JugadoresSala_EG" xml:space="preserve">
+    <value>Jugadores en la sala</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="Jugar_EG" xml:space="preserve">
+    <value>Jugar</value>
+    <comment>Elemento Grafico en el XAML: 04_CrearSalaGUI</comment>
+  </data>
+  <data name="ListaDeAmigos_EG" xml:space="preserve">
+    <value>Lista de amigos</value>
+    <comment>Elemento Grafico en el XAML: 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="ListarAmigos_EG" xml:space="preserve">
+    <value>Listar Amigos</value>
+    <comment>Elemento Grafico en el XAML: 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="ListarSolicitudesAmistad_EG" xml:space="preserve">
+    <value>Listar solicitudes de amistad</value>
+    <comment>Elemento Grafico en el XAML: 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="Masculino_EG" xml:space="preserve">
+    <value>Masculino</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="MenuPrincipal_EG" xml:space="preserve">
+    <value>Menu Principal</value>
+    <comment>Elemento Grafico en el XAML: 09_MenuPrincipalGUI</comment>
+  </data>
+  <data name="Minas_EG" xml:space="preserve">
+    <value>Minas</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="NombreUsuario_EG" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+    <comment>Elemento Grafico en el XAML: 02_IniciarSesionGUI | 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Opciones_EG" xml:space="preserve">
+    <value>Opciones</value>
+    <comment>Elemento Grafico en el XAML: 09_MenuPrincipalGUI</comment>
+  </data>
+  <data name="PreguntaEresUsuario_EG" xml:space="preserve">
+    <value>¿Aun no te has registrado en el juego?</value>
+    <comment>Elemento Grafico en el XAML: 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="RegistrarCuenta_EG" xml:space="preserve">
+    <value>Registrar Cuenta</value>
+    <comment>Elemento Grafico en el XAML: 03_RegistrarCuentaGUI</comment>
+  </data>
+  <data name="Registrarse_EG" xml:space="preserve">
+    <value>Registrarse</value>
+    <comment>Elemento Grafico en el XAML: 01_MainWindow | 02_IniciarSesionGUI</comment>
+  </data>
+  <data name="ReportarUsuario_EG" xml:space="preserve">
+    <value>ReportarUsuario</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="Salir_EG" xml:space="preserve">
+    <value>Salir</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="SeleccionarIdioma_EG" xml:space="preserve">
+    <value>Seleccionar Idioma</value>
+    <comment>Elemento Grafico en el XAML: 10_OpcionesGUI</comment>
+  </data>
+  <data name="SolicitudesAmistad_EG" xml:space="preserve">
+    <value>Solicitudes de amistad</value>
+    <comment>Elemento Grafico en el XAML: 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="Tiempo_EG" xml:space="preserve">
+    <value>Tiempo :</value>
+    <comment>Elemento Grafico en el XAML: 12_JuegoGUI</comment>
+  </data>
+  <data name="TituloVentanaCancelacionJuego_MSJ" xml:space="preserve">
+    <value>Confirmar cancelacion del juego</value>
+    <comment>Mensaje utilizado en el XAML : 04_CrearSalaGUI</comment>
+  </data>
+  <data name="TituloVentanaConfirmarEliminacionSolicitud_MSJ" xml:space="preserve">
+    <value>Confirmar Eliminacion Solicitud</value>
+    <comment>Mensaje utilizado en el XAML : 08_ListarSolicitudesAmistadGUI</comment>
+  </data>
+  <data name="TituloVentanaConfirmarEliminacion_MSJ" xml:space="preserve">
+    <value>Confirmar Eliminacion Amistad</value>
+    <comment>Mensaje utilizado en el XAML : 07_ListarAmigosGUI</comment>
+  </data>
+  <data name="UnirseAlJuego_EG" xml:space="preserve">
+    <value>Unirse al juego</value>
+    <comment>Elemento Grafico en el XAML: 09_MenuPrincipalGUI</comment>
+  </data>
+  <data name="UnJugador_EG" xml:space="preserve">
+    <value>Un Jugador</value>
+    <comment>Elemento Grafico en el XAML: 13_SeleccionarModoJuegoGUI</comment>
+  </data>
+</root>

@@ -1,0 +1,23 @@
+﻿<Page x:Class="Cliente.OpcionesGUI"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cliente"
+      xmlns:lenguaje="clr-namespace:Cliente.Properties.Langs"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="{x:Static lenguaje:Lang.Opciones_EG}">
+
+    <Viewbox Stretch="Fill"  StretchDirection="Both">
+        <Canvas Height="600" Width="800">
+            <StackPanel Orientation="Vertical" Width="800" Margin="0,0,0,0">
+                <StackPanel Orientation="Vertical" Width="400" Margin="0,110,0,0">
+                    <Button x:Name="IdiomaButton" Content="{x:Static lenguaje:Lang.SeleccionarIdioma_EG}" FontSize="20" Height="48" Width="400" Margin="0,0,0,0" Click="IdiomaButton_Click"/>
+                    <Button x:Name="CreditosButton"  Content="{x:Static lenguaje:Lang.Creditos_EG}" FontSize="20" Height="48" Width="400" Margin="0,30,0,0" Click="CreditosButton_Click"/>
+                    <Button x:Name="AtrasButton"  Content="{x:Static lenguaje:Lang.Atras_EG}" FontSize="20" Height="48" Width="400" Margin="0,30,0,0" Click="AtrasButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Canvas>
+    </Viewbox>
+</Page>

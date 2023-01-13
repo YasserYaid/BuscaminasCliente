@@ -1,0 +1,172 @@
+﻿<Page x:Class="Cliente.JuegoGUI"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cliente"
+      xmlns:lenguaje="clr-namespace:Cliente.Properties.Langs"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="{x:Static lenguaje:Lang.Buscaminas_EG}">
+
+    <Viewbox Stretch="Fill" StretchDirection="Both">
+        <Canvas Height="600" Width="800" >
+            <DockPanel Height="600" Width="800">
+                <StackPanel Orientation="Vertical" DockPanel.Dock="Top" Width="800">
+                    <StackPanel Orientation="Horizontal" Height="60" Width="660">
+                        <Label Content="{x:Static lenguaje:Lang.Tiempo_EG}" FontSize="20" Background="White" Width="120" Height="auto" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="Gray"/>
+                        <TextBox x:Name="TiempoTextBox" Text="{x:Static lenguaje:Lang.Tiempo_EG}" TextAlignment="Center" FontSize="20" Width="120" VerticalContentAlignment="Center" BorderBrush="Gray" IsEnabled="False"/>
+                        <Label Content="{x:Static lenguaje:Lang.Banderas_EG}" FontSize="20" Background="White" Width="120" Height="auto" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="1" BorderBrush="Gray"/>
+                        <TextBox x:Name="BanderasTextBox" Text="{x:Static lenguaje:Lang.Banderas_EG}" TextAlignment="Center" FontSize="20" Width="120" VerticalContentAlignment="Center" BorderBrush="Gray" IsEnabled="False"/>
+                        <TextBox Text="{x:Static lenguaje:Lang.Chat_EG}" TextAlignment="Center" FontSize="30" Width="200" VerticalContentAlignment="Center" BorderBrush="Gray"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Width="660">
+                        <Grid x:Name="TableroGrid" Height="480" Width="480">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Button x:Name="CasillaButton00" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton01" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton02" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton03" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton04" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton05" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton06" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton07" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton08" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton09" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="0" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton10" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton11" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton12" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton13" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton14" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton15" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton16" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton17" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton18" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton19" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="1" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton20" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton21" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton22" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton23" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton24" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton25" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton26" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton27" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton28" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton29" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="2" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton30" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton31" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton32" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton33" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton34" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton35" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton36" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton37" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton38" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton39" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="3" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton40" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton41" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton42" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton43" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton44" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton45" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton46" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton47" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton48" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton49" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="4" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton50" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton51" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton52" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton53" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton54" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton55" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton56" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton57" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton58" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton59" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="5" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton60" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton61" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton62" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton63" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton64" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton65" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton66" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton67" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton68" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton69" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="6" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton70" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton71" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton72" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton73" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton74" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton75" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton76" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton77" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton78" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton79" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="7" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton80" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton81" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton82" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton83" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton84" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton85" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton86" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton87" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton88" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton89" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="8" Grid.Column="9"/>
+
+                            <Button x:Name="CasillaButton90" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="0"/>
+                            <Button x:Name="CasillaButton91" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="1"/>
+                            <Button x:Name="CasillaButton92" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="2"/>
+                            <Button x:Name="CasillaButton93" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="3"/>
+                            <Button x:Name="CasillaButton94" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="4"/>
+                            <Button x:Name="CasillaButton95" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="5"/>
+                            <Button x:Name="CasillaButton96" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="6"/>
+                            <Button x:Name="CasillaButton97" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="7"/>
+                            <Button x:Name="CasillaButton98" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="8"/>
+                            <Button x:Name="CasillaButton99" Content="" MouseRightButtonDown="Boton_Derecho_Click" Click="Boton_Izquierdo_Click" Grid.Row="9" Grid.Column="9"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical" Width="180">
+                            <ListBox x:Name="MensajesChatListBox" Height="480" Background="LightGray"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="60" Width="660">
+                        <Button x:Name="SalirButton" Content="{x:Static lenguaje:Lang.Salir_EG}" Click="SalirButton_Click" Width="85" />
+                        <TextBox x:Name="MensajeChatTextbox" Height="60" Width="490" VerticalContentAlignment="Center"/>
+                        <Button x:Name="EnviarMensajeButton" Content="{x:Static lenguaje:Lang.EnviarMensaje_EG}" Click="EnviarMensajeButton_Click" Width="85" />
+                    </StackPanel>
+                </StackPanel>
+            </DockPanel>
+        </Canvas>
+    </Viewbox>
+</Page>

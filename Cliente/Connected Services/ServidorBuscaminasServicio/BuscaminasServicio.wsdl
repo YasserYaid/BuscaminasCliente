@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="BuscaminasServicio" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IChatServiceDuplex_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_ISalaServiceDuplex_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IJuegoServiceDuplex_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_ISalaService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_IAmigosServiceMgt_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="NetTcpBinding_ICuentaUsuarioServiceMgt_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Contratos" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:8080/?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IChatServiceDuplex_AgregarJugadorChatCallback_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarJugadorChatCallback" />
+  </wsdl:message>
+  <wsdl:message name="IChatServiceDuplex_EnviarMensajeChat_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensajeChat" />
+  </wsdl:message>
+  <wsdl:message name="IChatServiceDuplex_RecibirMensaje_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirMensaje" />
+  </wsdl:message>
+  <wsdl:message name="IChatServiceDuplex_RecibirMensaje_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirMensajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_AgregarJugadorComoPrimerJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarJugadorComoPrimerJugador" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_AgregarJugadorComoSegundoJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarJugadorComoSegundoJugador" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_ColocarJugadoresEnElJuego_InputMessage">
+    <wsdl:part name="parameters" element="tns:ColocarJugadoresEnElJuego" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_ActualizarNombresUsuario_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarNombresUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_ActualizarNombresUsuario_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarNombresUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_JugarMultigugador_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:JugarMultigugador" />
+  </wsdl:message>
+  <wsdl:message name="ISalaServiceDuplex_JugarMultigugador_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:JugarMultigugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_PasarTurno_InputMessage">
+    <wsdl:part name="parameters" element="tns:PasarTurno" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_AgregarJugadorJuegoCallback_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarJugadorJuegoCallback" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_EnviarPorcentaje_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarPorcentaje" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_EnviarPorcentaje_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarPorcentajeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_DeclararJuegoTerminado_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeclararJuegoTerminado" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_DeclararJuegoTerminado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeclararJuegoTerminadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_ObtenerJugadorRival_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerJugadorRival" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_ObtenerJugadorRival_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerJugadorRivalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirTurno_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirTurno" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirTurno_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirTurnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirPorcentages_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirPorcentages" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirPorcentages_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirPorcentagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirFinalizacionDelJuego_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirFinalizacionDelJuego" />
+  </wsdl:message>
+  <wsdl:message name="IJuegoServiceDuplex_RecibirFinalizacionDelJuego_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:RecibirFinalizacionDelJuegoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalaService_CrearNuevaSala_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearNuevaSala" />
+  </wsdl:message>
+  <wsdl:message name="ISalaService_CrearNuevaSala_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearNuevaSalaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISalaService_BuscarSala_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSala" />
+  </wsdl:message>
+  <wsdl:message name="ISalaService_BuscarSala_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarSalaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerAmigosUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAmigosUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerAmigosUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerAmigosUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerEstadoAmigos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoAmigos" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerEstadoAmigos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoAmigosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerSolicitudesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSolicitudesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ObtenerSolicitudesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerSolicitudesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_EnviarSolicitud_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_EnviarSolicitud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ExisteSolicitudAmistad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExisteSolicitudAmistad" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_ExisteSolicitudAmistad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExisteSolicitudAmistadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_EliminarAmigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAmigo" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_EliminarAmigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarAmigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_AceptarSolicitud_InputMessage">
+    <wsdl:part name="parameters" element="tns:AceptarSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="IAmigosServiceMgt_AceptarSolicitud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AceptarSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_GenerarCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCodigo" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_GenerarCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ComprobarCodigos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarCodigos" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ComprobarCodigos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarCodigosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_EnviarCorreo_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarCorreo" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_EnviarCorreo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarCorreoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarRegistroCuenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarRegistroCuenta" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarRegistroCuenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarRegistroCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarDisponibilidadCuenta_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarDisponibilidadCuenta" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarDisponibilidadCuenta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarDisponibilidadCuentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ValidarAuntentificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarAuntentificacion" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ValidarAuntentificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarAuntentificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ComprobarEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarEstado" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ComprobarEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ActualizarEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstado" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ActualizarEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerIdJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIdJugador" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerIdJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerIdJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerCorreoJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCorreoJugador" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerCorreoJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCorreoJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerNombreUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerNombreUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerNombreUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerNombreUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerEstadoJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoJugador" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_ObtenerEstadoJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadoJugadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarExisteciaJugador_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarExisteciaJugador" />
+  </wsdl:message>
+  <wsdl:message name="ICuentaUsuarioServiceMgt_VerificarExisteciaJugador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarExisteciaJugadorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IChatServiceDuplex">
+    <wsdl:operation name="AgregarJugadorChatCallback">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChatServiceDuplex/AgregarJugadorChatCallback" message="tns:IChatServiceDuplex_AgregarJugadorChatCallback_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensajeChat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IChatServiceDuplex/EnviarMensajeChat" message="tns:IChatServiceDuplex_EnviarMensajeChat_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirMensaje">
+      <wsdl:output wsaw:Action="http://tempuri.org/IChatServiceDuplex/RecibirMensaje" message="tns:IChatServiceDuplex_RecibirMensaje_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IChatServiceDuplex/RecibirMensajeResponse" message="tns:IChatServiceDuplex_RecibirMensaje_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISalaServiceDuplex">
+    <wsdl:operation name="AgregarJugadorComoPrimerJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaServiceDuplex/AgregarJugadorComoPrimerJugador" message="tns:ISalaServiceDuplex_AgregarJugadorComoPrimerJugador_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarJugadorComoSegundoJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaServiceDuplex/AgregarJugadorComoSegundoJugador" message="tns:ISalaServiceDuplex_AgregarJugadorComoSegundoJugador_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ColocarJugadoresEnElJuego">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaServiceDuplex/ColocarJugadoresEnElJuego" message="tns:ISalaServiceDuplex_ColocarJugadoresEnElJuego_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarNombresUsuario">
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalaServiceDuplex/ActualizarNombresUsuario" message="tns:ISalaServiceDuplex_ActualizarNombresUsuario_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaServiceDuplex/ActualizarNombresUsuarioResponse" message="tns:ISalaServiceDuplex_ActualizarNombresUsuario_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="JugarMultigugador">
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalaServiceDuplex/JugarMultigugador" message="tns:ISalaServiceDuplex_JugarMultigugador_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaServiceDuplex/JugarMultigugadorResponse" message="tns:ISalaServiceDuplex_JugarMultigugador_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IJuegoServiceDuplex">
+    <wsdl:operation name="PasarTurno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/PasarTurno" message="tns:IJuegoServiceDuplex_PasarTurno_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarJugadorJuegoCallback">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/AgregarJugadorJuegoCallback" message="tns:IJuegoServiceDuplex_AgregarJugadorJuegoCallback_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarPorcentaje">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/EnviarPorcentaje" message="tns:IJuegoServiceDuplex_EnviarPorcentaje_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/EnviarPorcentajeResponse" message="tns:IJuegoServiceDuplex_EnviarPorcentaje_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeclararJuegoTerminado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/DeclararJuegoTerminado" message="tns:IJuegoServiceDuplex_DeclararJuegoTerminado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/DeclararJuegoTerminadoResponse" message="tns:IJuegoServiceDuplex_DeclararJuegoTerminado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerJugadorRival">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/ObtenerJugadorRival" message="tns:IJuegoServiceDuplex_ObtenerJugadorRival_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/ObtenerJugadorRivalResponse" message="tns:IJuegoServiceDuplex_ObtenerJugadorRival_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTurno">
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirTurno" message="tns:IJuegoServiceDuplex_RecibirTurno_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirTurnoResponse" message="tns:IJuegoServiceDuplex_RecibirTurno_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirPorcentages">
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirPorcentages" message="tns:IJuegoServiceDuplex_RecibirPorcentages_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirPorcentagesResponse" message="tns:IJuegoServiceDuplex_RecibirPorcentages_InputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecibirFinalizacionDelJuego">
+      <wsdl:output wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirFinalizacionDelJuego" message="tns:IJuegoServiceDuplex_RecibirFinalizacionDelJuego_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IJuegoServiceDuplex/RecibirFinalizacionDelJuegoResponse" message="tns:IJuegoServiceDuplex_RecibirFinalizacionDelJuego_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISalaService">
+    <wsdl:operation name="CrearNuevaSala">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaService/CrearNuevaSala" message="tns:ISalaService_CrearNuevaSala_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalaService/CrearNuevaSalaResponse" message="tns:ISalaService_CrearNuevaSala_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSala">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISalaService/BuscarSala" message="tns:ISalaService_BuscarSala_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISalaService/BuscarSalaResponse" message="tns:ISalaService_BuscarSala_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IAmigosServiceMgt">
+    <wsdl:operation name="ObtenerAmigosUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerAmigosUsuario" message="tns:IAmigosServiceMgt_ObtenerAmigosUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerAmigosUsuarioResponse" message="tns:IAmigosServiceMgt_ObtenerAmigosUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoAmigos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerEstadoAmigos" message="tns:IAmigosServiceMgt_ObtenerEstadoAmigos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerEstadoAmigosResponse" message="tns:IAmigosServiceMgt_ObtenerEstadoAmigos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSolicitudesUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerSolicitudesUsuario" message="tns:IAmigosServiceMgt_ObtenerSolicitudesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ObtenerSolicitudesUsuarioResponse" message="tns:IAmigosServiceMgt_ObtenerSolicitudesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarSolicitud">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/EnviarSolicitud" message="tns:IAmigosServiceMgt_EnviarSolicitud_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/EnviarSolicitudResponse" message="tns:IAmigosServiceMgt_EnviarSolicitud_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExisteSolicitudAmistad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ExisteSolicitudAmistad" message="tns:IAmigosServiceMgt_ExisteSolicitudAmistad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/ExisteSolicitudAmistadResponse" message="tns:IAmigosServiceMgt_ExisteSolicitudAmistad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAmigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/EliminarAmigo" message="tns:IAmigosServiceMgt_EliminarAmigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/EliminarAmigoResponse" message="tns:IAmigosServiceMgt_EliminarAmigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AceptarSolicitud">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAmigosServiceMgt/AceptarSolicitud" message="tns:IAmigosServiceMgt_AceptarSolicitud_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAmigosServiceMgt/AceptarSolicitudResponse" message="tns:IAmigosServiceMgt_AceptarSolicitud_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ICuentaUsuarioServiceMgt">
+    <wsdl:operation name="GenerarCodigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/GenerarCodigo" message="tns:ICuentaUsuarioServiceMgt_GenerarCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/GenerarCodigoResponse" message="tns:ICuentaUsuarioServiceMgt_GenerarCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarCodigos">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarCodigos" message="tns:ICuentaUsuarioServiceMgt_ComprobarCodigos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarCodigosResponse" message="tns:ICuentaUsuarioServiceMgt_ComprobarCodigos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarCorreo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/EnviarCorreo" message="tns:ICuentaUsuarioServiceMgt_EnviarCorreo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/EnviarCorreoResponse" message="tns:ICuentaUsuarioServiceMgt_EnviarCorreo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarRegistroCuenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarRegistroCuenta" message="tns:ICuentaUsuarioServiceMgt_VerificarRegistroCuenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarRegistroCuentaResponse" message="tns:ICuentaUsuarioServiceMgt_VerificarRegistroCuenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarDisponibilidadCuenta">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarDisponibilidadCuenta" message="tns:ICuentaUsuarioServiceMgt_VerificarDisponibilidadCuenta_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarDisponibilidadCuentaResponse" message="tns:ICuentaUsuarioServiceMgt_VerificarDisponibilidadCuenta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarAuntentificacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ValidarAuntentificacion" message="tns:ICuentaUsuarioServiceMgt_ValidarAuntentificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ValidarAuntentificacionResponse" message="tns:ICuentaUsuarioServiceMgt_ValidarAuntentificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarEstado" message="tns:ICuentaUsuarioServiceMgt_ComprobarEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarEstadoResponse" message="tns:ICuentaUsuarioServiceMgt_ComprobarEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ActualizarEstado" message="tns:ICuentaUsuarioServiceMgt_ActualizarEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ActualizarEstadoResponse" message="tns:ICuentaUsuarioServiceMgt_ActualizarEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIdJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerIdJugador" message="tns:ICuentaUsuarioServiceMgt_ObtenerIdJugador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerIdJugadorResponse" message="tns:ICuentaUsuarioServiceMgt_ObtenerIdJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCorreoJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerCorreoJugador" message="tns:ICuentaUsuarioServiceMgt_ObtenerCorreoJugador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerCorreoJugadorResponse" message="tns:ICuentaUsuarioServiceMgt_ObtenerCorreoJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNombreUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerNombreUsuario" message="tns:ICuentaUsuarioServiceMgt_ObtenerNombreUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerNombreUsuarioResponse" message="tns:ICuentaUsuarioServiceMgt_ObtenerNombreUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerEstadoJugador" message="tns:ICuentaUsuarioServiceMgt_ObtenerEstadoJugador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerEstadoJugadorResponse" message="tns:ICuentaUsuarioServiceMgt_ObtenerEstadoJugador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarExisteciaJugador">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarExisteciaJugador" message="tns:ICuentaUsuarioServiceMgt_VerificarExisteciaJugador_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarExisteciaJugadorResponse" message="tns:ICuentaUsuarioServiceMgt_VerificarExisteciaJugador_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IChatServiceDuplex" type="tns:IChatServiceDuplex">
+    <wsp:PolicyReference URI="#NetTcpBinding_IChatServiceDuplex_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AgregarJugadorChatCallback">
+      <soap12:operation soapAction="http://tempuri.org/IChatServiceDuplex/AgregarJugadorChatCallback" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensajeChat">
+      <soap12:operation soapAction="http://tempuri.org/IChatServiceDuplex/EnviarMensajeChat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirMensaje">
+      <soap12:operation soapAction="http://tempuri.org/IChatServiceDuplex/RecibirMensaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ISalaServiceDuplex" type="tns:ISalaServiceDuplex">
+    <wsp:PolicyReference URI="#NetTcpBinding_ISalaServiceDuplex_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="AgregarJugadorComoPrimerJugador">
+      <soap12:operation soapAction="http://tempuri.org/ISalaServiceDuplex/AgregarJugadorComoPrimerJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarJugadorComoSegundoJugador">
+      <soap12:operation soapAction="http://tempuri.org/ISalaServiceDuplex/AgregarJugadorComoSegundoJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ColocarJugadoresEnElJuego">
+      <soap12:operation soapAction="http://tempuri.org/ISalaServiceDuplex/ColocarJugadoresEnElJuego" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarNombresUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ISalaServiceDuplex/ActualizarNombresUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JugarMultigugador">
+      <soap12:operation soapAction="http://tempuri.org/ISalaServiceDuplex/JugarMultigugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IJuegoServiceDuplex" type="tns:IJuegoServiceDuplex">
+    <wsp:PolicyReference URI="#NetTcpBinding_IJuegoServiceDuplex_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="PasarTurno">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/PasarTurno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarJugadorJuegoCallback">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/AgregarJugadorJuegoCallback" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarPorcentaje">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/EnviarPorcentaje" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeclararJuegoTerminado">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/DeclararJuegoTerminado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerJugadorRival">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/ObtenerJugadorRival" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirTurno">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/RecibirTurno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirPorcentages">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/RecibirPorcentages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecibirFinalizacionDelJuego">
+      <soap12:operation soapAction="http://tempuri.org/IJuegoServiceDuplex/RecibirFinalizacionDelJuego" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ISalaService" type="tns:ISalaService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ISalaService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="CrearNuevaSala">
+      <soap12:operation soapAction="http://tempuri.org/ISalaService/CrearNuevaSala" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSala">
+      <soap12:operation soapAction="http://tempuri.org/ISalaService/BuscarSala" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_IAmigosServiceMgt" type="tns:IAmigosServiceMgt">
+    <wsp:PolicyReference URI="#NetTcpBinding_IAmigosServiceMgt_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="ObtenerAmigosUsuario">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/ObtenerAmigosUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoAmigos">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/ObtenerEstadoAmigos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerSolicitudesUsuario">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/ObtenerSolicitudesUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/EnviarSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExisteSolicitudAmistad">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/ExisteSolicitudAmistad" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarAmigo">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/EliminarAmigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AceptarSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/IAmigosServiceMgt/AceptarSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ICuentaUsuarioServiceMgt" type="tns:ICuentaUsuarioServiceMgt">
+    <wsp:PolicyReference URI="#NetTcpBinding_ICuentaUsuarioServiceMgt_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GenerarCodigo">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/GenerarCodigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarCodigos">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarCodigos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarCorreo">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/EnviarCorreo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarRegistroCuenta">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarRegistroCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarDisponibilidadCuenta">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarDisponibilidadCuenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarAuntentificacion">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ValidarAuntentificacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarEstado">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ComprobarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarEstado">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ActualizarEstado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIdJugador">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerIdJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCorreoJugador">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerCorreoJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerNombreUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerNombreUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadoJugador">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/ObtenerEstadoJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarExisteciaJugador">
+      <soap12:operation soapAction="http://tempuri.org/ICuentaUsuarioServiceMgt/VerificarExisteciaJugador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BuscaminasServicio">
+    <wsdl:port name="NetTcpBinding_IChatServiceDuplex" binding="tns:NetTcpBinding_IChatServiceDuplex">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ISalaServiceDuplex" binding="tns:NetTcpBinding_ISalaServiceDuplex">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IJuegoServiceDuplex" binding="tns:NetTcpBinding_IJuegoServiceDuplex">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ISalaService" binding="tns:NetTcpBinding_ISalaService">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_IAmigosServiceMgt" binding="tns:NetTcpBinding_IAmigosServiceMgt">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ICuentaUsuarioServiceMgt" binding="tns:NetTcpBinding_ICuentaUsuarioServiceMgt">
+      <soap12:address location="net.tcp://localhost:8081/BuscaminasServicio" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/BuscaminasServicio</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>HP-ENVY-GRIS\YC-ADM</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

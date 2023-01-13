@@ -1,0 +1,20 @@
+﻿<Window x:Class="Cliente.EnviarSolicitudAmistadGUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cliente"
+        xmlns:lenguaje="clr-namespace:Cliente.Properties.Langs"
+        mc:Ignorable="d"
+        Title="{x:Static lenguaje:Lang.EnviarSolicitud_EG}" Height="450" Width="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Orientation="Vertical" Height="400" Margin="0,10,0,10">
+            <Label x:Name="NombreUsuarioLabel"  Content="{x:Static lenguaje:Lang.IngresarNombreUsuario_EG}"  HorizontalContentAlignment="Center" FontSize="18" Height="auto" Width="400" Margin="0,120,0,10"/>
+            <TextBox x:Name="NombreUsuarioTextBox" Height="30" Width="400" VerticalAlignment="Center" Margin="0,10,0,10" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button x:Name="AceptarButton" Content="{x:Static lenguaje:Lang.Aceptar_EG}" Margin="0,0,10,0" FontSize="17" Click="AceptarButton_Click" Height="30" Width="120"/>
+                <Button x:Name="CancelarButton" Content="{x:Static lenguaje:Lang.Cancelar_EG}" Margin="10,0,0,0" FontSize="17" Click="CancelarButton_Click" Height="30" Width="120"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

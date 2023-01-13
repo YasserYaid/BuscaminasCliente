@@ -1,0 +1,20 @@
+﻿<Window x:Class="Cliente.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cliente"
+        xmlns:lenguaje="clr-namespace:Cliente.Properties.Langs"
+        mc:Ignorable="d"
+        Title="{x:Static lenguaje:Lang.Buscaminas_EG}" Height="600" Width="800">
+
+    <Viewbox Stretch="Fill"  StretchDirection="Both">
+        <Canvas Height="600" Width="800">
+            <StackPanel Orientation="Vertical" Width="800" Margin="0,200,0,0">
+                <Button Name="IniciarSesionButton" Content="{x:Static lenguaje:Lang.IniciarSesion_EG}" FontSize="30" Height="80" Width="600" Click="IniciarSesionButton_Click" Margin="0,0,0,30"/>
+                <Button Name="RegistrarseButton" Content="{x:Static lenguaje:Lang.Registrarse_EG}" FontSize="30" Height="80" Width="600" Click="RegistrarseButton_Click" Margin="0,30,0,0"/>
+            </StackPanel>
+        </Canvas>
+    </Viewbox>
+    
+</Window>
